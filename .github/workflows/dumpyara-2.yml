@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ROM_URL:
-        description: "Direct Link of the ROM/Firmware to Dump"
+        description: https://drive.usercontent.google.com/download?id=1-SlwXPgOMdIjPkweic21QMH_cxBYGTO2&export=download&confirm=t&uuid=752e5eb6-cd30-44c6-9382-2f4791734252
         required: true
       EXTRA_CMD:
         description: "Any Extra Command to Run Before Dump"
@@ -34,8 +34,8 @@ jobs:
          working-directory: firmware_dumper
          run: |
               sudo bash setup.sh
-              git config --global user.name "Sushrut1101"
-              git config --global user.email "guptasushrut@gmail.com"
+              git config --global user.name "Swastik369"
+              git config --global user.email "swastikpari123@gmail.com"
 
        - name: Setup config envs
          working-directory: firmware_dumper
